@@ -1,27 +1,60 @@
-# PeragoAngular
+# Perago Information System
+## Angular Task
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+### Requirement
+Build SPA web application for registering organization's employee hierarchy or structure
+1. shall create employee position/role
+2. the position should be hierarchical there is a parent child relationship between the positions
+  e.g. CEO can be root position no parent and CFO is a child of CEO
+3. shall get and list the positions in a tree mode with unlimited n positions
+e.g.
 
-## Development server
+        CEO
+        ├── CTO
+        │   └── Project Manager
+        │       └── Product Owner
+        │           ├── Tech Lead
+        │           │   ├── Frontend Developer
+        │           │   ├── Backend Developer
+        │           │   ├── DevOps Engineer
+        │           │   └── ..
+        │           ├── QA Engineer
+        │           ├── Scrum Master
+        │           └── ...
+        ├── CFO
+        │   ├── Chef Accountant
+        │   │   ├── Financial Analyst
+        │   │   └── Account and Payable
+        │   └── Internal Audit
+        ├── COO
+        │   ├── Product Manager
+        │   ├── Operation Manager
+        │   ├── Customer Relation
+        │   └── ...
+        └── HR
+4. shall click on the list and get one of employee positions and update/delete it
+5. Model (you can update this model if needed)
+    | Column      |    Type     |
+    |-------------|-------------|
+    | id          | int         |
+    | name        | string      |
+    | description | string      |
+    | parentId    | in          |
+6. The app shall have routing, RESTFull api call, state management(desirable),
+7. The app shall have interactive page layout (Good UI/UX)
+8. The forms in the app should be [reactive form](https://angular.io/guide/reactive-forms) and have validation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Resources to use (Required)
+a. Framework [NgZorro/Antd](https://ng.ant.design/docs/introduce/en)
+b. Styles [TailwindCss](https://tailwindcss.com/)
+c. State Management [Ngxs](https://www.ngxs.io/)
+d. Validation [Reactive form validation](https://www.npmjs.com/package/@rxweb/reactive-form-validators) - Not Mandatory
+e. Use REST apis from [Firebase Database REST API](https://firebase.google.com/docs/reference/rest/database) or [Mockoon](https://mockoon.com/) or any other mock api
 
-## Code scaffolding
+### Extra Resources
+- [Lodash](https://lodash.com/docs/)
+- [RxJs](https://rxjs.dev/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+NOTE: You can install any libraries if needed.
+The above libraries are already on the project (just npm install)
