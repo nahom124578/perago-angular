@@ -45,11 +45,11 @@ e.g.
 8. The forms in the app should be [reactive form](https://angular.io/guide/reactive-forms) and have validation
 
 ### Resources to use (Required)
-a. Framework [NgZorro/Antd](https://ng.ant.design/docs/introduce/en)
-b. Styles [TailwindCss](https://tailwindcss.com/)
-c. State Management [Ngxs](https://www.ngxs.io/)
-d. Validation [Reactive form validation](https://www.npmjs.com/package/@rxweb/reactive-form-validators) - Not Mandatory
-e. Use REST apis from [Firebase Database REST API](https://firebase.google.com/docs/reference/rest/database) or [Mockoon](https://mockoon.com/) or any other mock api
+- Framework [NgZorro/Antd](https://ng.ant.design/docs/introduce/en)
+- Styles [TailwindCss](https://tailwindcss.com/)
+- State Management [Ngxs](https://www.ngxs.io/)
+- Validation [Reactive form validation](https://www.npmjs.com/package/@rxweb/reactive-form-validators) - Not Mandatory
+- Use REST apis from [Firebase Database REST API](https://firebase.google.com/docs/reference/rest/database) or [Mockoon](https://mockoon.com/) or any other mock api
 
 ### Extra Resources
 - [Lodash](https://lodash.com/docs/)
